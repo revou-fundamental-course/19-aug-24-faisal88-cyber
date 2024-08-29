@@ -7,7 +7,7 @@ nav {
 .logo-icon {
     height: 48px;
     width: 48px;
-    background-image: url(https://picsum.photos/100);
+    background-image: url(../assets/profile.png);
     background-size: cover;
     border-radius: 50%;
 }
@@ -28,7 +28,6 @@ nav {
 
 .banner-img {
     height: 300px;
-    background-image: url(https://picsum.photos/1000);
     background-size: cover;
     background-position: center;
 }
@@ -45,9 +44,51 @@ nav {
 
 .profile-img {
     height: 50px;
-    background-image: url(https://picsum.photos/250);
+    background-image: url(../assets/ig.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
     width: 50px;
+}
+
+.profile-img2 {
+    height: 50px;
+    background-image: url(../assets/fb.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.profile-img3 {
+    height: 50px;
+    background-image: url(../assets/logoKotajpg.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.img-1 {
+    background-image: url(../assets/Indonesialokasipng.png);
+}
+
+.img-2 {
+    background-image: url(../assets/peta.png);
+}
+
+.img-3 {
+    background-image: url(../assets/IndonesiaKalimantan.png);
+}
+
+.kontainer {
+    display: flex;
+    justify-content: space-between;
+}
+.konten {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
 }

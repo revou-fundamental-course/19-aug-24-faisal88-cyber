@@ -11,13 +11,14 @@
     <nav>
         <header>
             <div class="logo-icon"></div>
+            
         </header>
 
         <section class="nav-container">
-            <a href="#" class="nav-item">Home</a>
-            <a href="#" class="nav-item">Our Profile</a>
-            <a href="#" class="nav-item">Achivement</a>
-            <a href="#" class="nav-item">Message Us</a>
+            <a href="#1" class="nav-item">Halaman Utama</a>
+            <a href="#2" class="nav-item">Sosial Media</a>
+            <!-- <a href="#" class="nav-item">Achivement</a> -->
+            <a href="#3" class="nav-item">Pesan</a>
         </section>
 
     </nav>
@@ -27,12 +28,39 @@
     <main>
         <article>
             <header>
-                <h1>Welcome user, to our website</h1>
+                <h1 id="1">Selamat datang di website ini</h1>
             </header>
 
-            <p>Lorem ipsum dolor sit amet adipiscing</p>
-
-            <div class="banner-img"></div>
+            <p>Assalamualaikum, website ini di buat untuk memenuhi tugas fundamental course yang diadakan RevoU.</p>
+            <p>Website ini berisi tentang profile kota Singkawang</p>
+            <br>
+            <p>  Kota Singkawang adalah sebuah kota yang terletak di provinsi Kalimantan Barat, Indonesia.
+            Kota ini terletak di sekitar 145 km sebelah utara dari ibu kota provinsi, Kota Pontianak, dan dikelilingi oleh pegunungan Pasi, Poteng, dan Sakkok.
+            Kota ini meliputi wilayah seluas 504 km2 dan memiliki populasi 186.462 penduduk pada sensus tahun 2010, dan 241.467 penduduk pada tahun 2022.
+            Dengan luas wilayah 504 km², Singkawang terletak di wilayah khatulistiwa dengan koordinat di antara 0°44’55,85” - 1°01’21,51"LS 108°051’47,6”-109°010’19”BT. Singkawang merupakan kota yang berbatasan dengan Kuching, Malaysia.
+            </p>
+            <br>
+            <h3>Iklim</h3>
+            <p>
+                Secara umum wilayah Kota Singkawang beriklim tropis dengan suhu rata-rata berkisar antara 21,8 °C sampai dengan 30,05 °C. Iklim tropis di wilayah Kota Singkawang termasuk klasifikasi iklim tropis basah dengan curah hujan rata-rata 2.819 mm/tahun atau 235 mm/bulan. Jumlah rata-rata hari hujan 157 hari/tahun atau rata-rata 13 hari hujan/bulan.
+                Rata-rata kelembaban udara di kota Singkawang adalah 70%. Curah hujan yang tertinggi terjadi pada bulan September sampai dengan Januari dan curah hujan terendah antara bulan Juni sampai dengan Agustus. Kota Singkawang memiliki wilayah datar dan sebagian besar merupakan dataran rendah antara 50 meter s/d 100 meter di atas permukaan laut. 
+                Kota Singkawang yang terletak pada 0° LS dan 109° BT, wilayahnya merupakan daerah hamparan dan berbukit serta sebelah Barat berada pada pesisir laut.
+            </p>
+            <h3>Wisata</h3>
+            <p>Berikut ini wisata yang ada di kota Singkawang</p>
+            <p>
+                <ul>
+                    <li>Pantai Pasir Panjang</li>
+                    <li>Pantai Batu Burung</li>
+                    <li>Pantai Batu Payung</li>
+                    <li>Pantai Kura-kura</li>
+                    <li>Danau Biru</li>
+                    <li>Pulau Simping</li>
+                </ul>
+            </p>
+            <div class="banner-img img-1"></div>
+            <div class="banner-img img-2"></div>
+            <div class="banner-img img-3"></div>
             
         </article>
 
@@ -40,39 +68,82 @@
 
         <section>
             <header>
-                <h1>Our Profile</h1>
+                <h1 id="2">Sosial Media</h1>
             </header>
 
             <section class="profile-container"> 
-                <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Software Engineer</h2>
-                </div>
 
                 <div class="profile-item">
                     <div class="profile-img"></div>
-                    <h2>Software Engineer</h2>
+                    <h3>Instagram</h3>
                 </div>
 
                 <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Software Engineer</h2>
+                    <div class="profile-img2"></div>
+                    <h3>Facebook</h3>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img3"></div>
+                    <h3>Website</h3>
                 </div>
             </section>
         </section>
+<br><br><br>
+        <hr />
+<br><br>
+        <section class="kontainer">
+            <header>
+                <h1 id="3">Pesan</h1>
+            </header>
 
-        <section>
-            <form>
+            <form class="konten">
+                <div>
+                    <label for="name">Nama:</label> 
+                    
+                    <input id="name" />
+                </div>
+
+                <div>
+                    <label for="tgl">Tanggal Lahir:</label>
+                    <input id="tgl">
+                </div>
+
+                <div>
+                    <label for="gender">Jenis Kelamin:</label>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Pria</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Wanita</label>
+                </div>
+
+                <div>
+                    <label for="pesan">Pesan:</label>
+                    <input id="pesan">
+                </div>
+
+                <button type="button" onclick="formValidation()">Submit</button>
 
             </form>
 
-            <div></div>
+            <div class="konten">
+                Nama: <span id="result"></span> <br>
+                Tanggal Lahir: <span id="hasil"></span> <br>
+                Jenis Kelamin: <span id="gender"></span> <br>
+                Pesan: <span id="pesanh"></span>
+            </div>
+
+            <button type="button" onclick="nextSlide(1)">Next Slide</button>
         </section>
 
     </main>
-
+<br><br>
+    <hr />
+<br>
     <footer>
-        <p>Made by F</p>
+        <p>Website ini dibuat dengan HTML, CSS, dan JAVASCRIPT</p>
     </footer>
+
+    <script src="js\script.js"></script>
 </body>
 </html>
